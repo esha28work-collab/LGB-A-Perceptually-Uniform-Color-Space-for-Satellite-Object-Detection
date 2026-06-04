@@ -118,7 +118,8 @@ mcse-yolo/
 │   ├── S7_load_and_verify_models.m
 │   └── S8_load_models.m
 ├── train_ablation_evaluate
-│   └── xai.py                # YOLOv8n training +Channel masking+ Evaluation          
+│   └── train.py # YOLOv8n training
+│   └── xai.py # Channel masking+ Evaluation          
 ├── figures/
 │   └── pipeline.png    # Visual comparison of RGB / YGB / LGB conversion
 │   └── color_comparison.png    # Visual comparison of RGB / YGB / LGB conversion
