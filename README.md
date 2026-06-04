@@ -10,7 +10,7 @@ We propose and evaluate **LGB**, a novel input color space derived from the perc
 
 ---
 <p align="center">
-  <img src="figures/pipeline.png" alt="MCSE-YOLO Framework Pipeline" width="800"/>
+  <img src="Pipeline.png" alt="MCSE-YOLO Framework Pipeline" width="800"/>
   <br>
   <em>Fig. 1: The overall MCSE-YOLO framework — color conversion, data split, YOLOv8n training, and channel ablation.</em>
 </p>
