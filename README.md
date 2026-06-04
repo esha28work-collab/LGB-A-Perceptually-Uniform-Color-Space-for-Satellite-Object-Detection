@@ -9,6 +9,11 @@ Most object detection pipelines accept images in the standard **RGB** color spac
 We propose and evaluate **LGB**, a novel input color space derived from the perceptually uniform **OKLab** color model, and compare it against the RGB baseline and the previously published **YGB** space. All three color spaces are evaluated on identical YOLOv8n architectures trained from scratch on the **SIMD** (Satellite Imagery Multi-vehicles Dataset) [gotten from kaggle](https://www.kaggle.com/datasets/akhileshnegi/satellite-imagery-of-multiple-vehicles/data), using a channel masking XAI pipeline to explain *why* a given color space works, not just *how well* it works.
 
 ---
+<p align="center">
+  <img src="figures/pipeline.png" alt="MCSE-YOLO Framework Pipeline" width="800"/>
+  <br>
+  <em>Fig. 1: The overall MCSE-YOLO framework — color conversion, data split, YOLOv8n training, and channel ablation.</em>
+</p>
 
 ## The Core Idea
 
