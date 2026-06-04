@@ -107,15 +107,20 @@ mcse-yolo/
 ├── data/
 │   └── simd/                   # SIMD dataset (not included — see dataset source)
 ├── convert/
-│   ├── rgb_to_ygb.py           # YCbCr luminance substitution
-│   └── rgb_to_lgb.py           # OKLab lightness substitution (4-stage pipeline)
-├── train/
-│   └── train.py                # YOLOv8n training script (all three color spaces)
-├── xai/
-│   └── channel_ablation.py     # Channel masking + confidence drop measurement
-├── eval/
-│   └── evaluate.py             # mAP, precision, recall computation
+│   ├── inspect_simd.m         
+│   └── prep_image.m           
+│   ├── rgb_passthrough.m         
+│   └── rgb_to_lgb           # OKLab lightness substitution (4-stage pipeline)
+│   ├── rgb_to_ygb.m         # YCbCr luminance substitution
+│   └── S3_verify_conversion      
+│   ├── S4_build_datasets       
+│   └── S6_intergrity_check.m  
+│   ├── S7_load_and_verify_models.m
+│   └── S8_load_models.m
+├── train_ablation_evaluate
+│   └── xai.py                # YOLOv8n training +Channel masking+ Evaluation          
 ├── figures/
+│   └── pipeline.png    # Visual comparison of RGB / YGB / LGB conversion
 │   └── color_comparison.png    # Visual comparison of RGB / YGB / LGB conversion
 └── README.md
 ```
